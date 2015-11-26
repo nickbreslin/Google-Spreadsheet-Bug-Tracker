@@ -1,0 +1,9 @@
+{
+    "name": "booshlin/google-spreadsheet-bug-tracker",
+    "description": "Using Google Spreadsheet to track bugs",
+    "require": {
+        "php": ">=5.3.0",
+	    "asimlqt/php-google-spreadsheet-client": "2.3.*",
+        "google/apiclient": "1.0.*@beta"
+    }
+}
