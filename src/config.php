@@ -1,11 +1,13 @@
 <?php
 
-define('SETTINGS_FILE',  'config/settings.ini');
+define('SETTINGS_FILE',  ROOT_PATH . 'config/settings.ini');
 
 $iniSettings  = parse_ini_file(SETTINGS_FILE, true);
-print_r($iniSettings);
+
+define('KEY_FILE',  ROOT_PATH . $iniSettings['private_key']);
+
 $client_email = $iniSettings['client_email'];
-$private_key  = file_get_contents($iniSettings['private_key']);
+$private_key  = file_get_contents(KEY_FILE);
 $scopes       = array("https://spreadsheets.google.com/feeds");
 
 $credentials = new Google_Auth_AssertionCredentials(
