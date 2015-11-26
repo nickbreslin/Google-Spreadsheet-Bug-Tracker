@@ -1,5 +1,5 @@
 {
-    "name": "booshlin/google-spreadsheet-bug-tracker",
+    "name": "nickbreslin/google-spreadsheet-bug-tracker",
     "description": "Using Google Spreadsheet to track bugs",
     "require": {
         "php": ">=5.5.0",
