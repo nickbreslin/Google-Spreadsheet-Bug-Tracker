@@ -10,18 +10,23 @@
  * Returns a list feed of the specified worksheet.
  * 
  * @param object $worksheet Google Auth Access Token.
- * @param string $file  title of spreadsheet.
+ * @param string $entries  title of spreadsheet.
  * 
  * @return array $results
  */
-function insertLine($worksheet, $file) 
+function insertLine($worksheet, $entries) 
 {
+	$cellFeed = $worksheet->getCellFeed();
+    $cellFeed->editCell(1,1, "entries");
 
-    $title           = $worksheet->getTitle();
-    $listFeed        = $worksheet->getListFeed();
-    $results[$title] = count($listFeed->getEntries());
+    $listFeed = $worksheet->getListFeed();
 
-    return $results;
+    foreach($entries as $entry) {
+		$row = array("entries"=>$entry);
+		$listFeed->insert($row);
+	}
+
+    return true;
 }
 
 /**
