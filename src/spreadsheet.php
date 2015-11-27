@@ -2,11 +2,8 @@
 /**
  * Bugcount file
  *
- * @category Bugtracker
  * @package  Bugtracker
  * @author   "Nick Breslin <nickbreslin@gmail.com>"
- * @license  [name]
- * @link
  */
 
 use Google\Spreadsheet\DefaultServiceRequest;
