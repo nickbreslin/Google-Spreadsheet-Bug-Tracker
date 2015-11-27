@@ -9,8 +9,8 @@
 /**
  * Returns a list feed of the specified worksheet.
  * 
- * @param object $worksheet Google Auth Access Token
- * @param string $file  title of spreadsheet
+ * @param object $worksheet Google Auth Access Token.
+ * @param string $file  title of spreadsheet.
  * 
  * @return array $results
  */
