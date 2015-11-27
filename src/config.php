@@ -2,8 +2,8 @@
 /**
  * Config File
  *
- * @package nickbreslin/google-spreadsheet-bug-tracker
- * @author  Nick Breslin (nickbreslin@gmail.com)
+ * @package Bugtracker
+ * @author  "Nick Breslin <nickbreslin@gmail.com>"
  */
 
 $iniSettings  = parse_ini_file(ROOT_PATH . 'config/settings.ini', true);

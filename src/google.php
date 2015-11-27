@@ -2,8 +2,8 @@
 /**
  * Bugcount file
  *
- * @package nickbreslin/google-spreadsheet-bug-tracker
- * @author  Nick Breslin (nickbreslin@gmail.com)
+ * @package Bugtracker
+ * @author  "Nick Breslin <nickbreslin@gmail.com>"
  */
 
 $client = new Google_Client();
@@ -13,7 +13,13 @@ if ($client->getAuth()->isAccessTokenExpired()) {
 }
 
 
-
+/**
+    * Returns a list feed of the specified worksheet.
+    * 
+    * @param object $client
+    * 
+    * @return string $accessToken
+*/
 function getAccessToken($client)  
 {
     

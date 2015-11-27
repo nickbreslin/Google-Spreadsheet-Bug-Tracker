@@ -2,8 +2,8 @@
 /**
  * Bugcount file
  *
- * @package nickbreslin/google-spreadsheet-bug-tracker
- * @author  Nick Breslin (nickbreslin@gmail.com)
+ * @package Bugtracker
+ * @author  "Nick Breslin <nickbreslin@gmail.com>"
  */
 
 function insertLine($worksheet, $file) 
