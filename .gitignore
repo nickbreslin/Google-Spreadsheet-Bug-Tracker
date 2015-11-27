@@ -1,0 +1,6 @@
+.DS_Store
+vendor/
+src/
+composer.lock
+*.p12
+config/
