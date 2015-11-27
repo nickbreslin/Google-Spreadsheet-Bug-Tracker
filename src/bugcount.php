@@ -1,6 +1,22 @@
 <?php
+/**
+ * Bugcount File
+ *
+ * TODO - Migrate into Class
+ *
+ * @package nickbreslin/google-spreadsheet-bug-tracker
+ * @author  Nick Breslin (nickbreslin@gmail.com)
+ */
 
-function doBugCount($worksheetFeed) 
+
+/**
+    * Returns a list feed of the specified worksheet.
+    * 
+    * @param object $WorksheetFeed Worksheet object
+    * 
+    * @return array $results associative array
+*/
+function doBugCount($worksheetFeed)  
 {
 
     $results = [];

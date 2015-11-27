@@ -1,4 +1,10 @@
 <?php
+/**
+ * Bugcount file
+ *
+ * @package nickbreslin/google-spreadsheet-bug-tracker
+ * @author  Nick Breslin (nickbreslin@gmail.com)
+ */
 
 use Google\Spreadsheet\DefaultServiceRequest;
 use Google\Spreadsheet\ServiceRequestFactory;

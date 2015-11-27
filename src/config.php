@@ -1,13 +1,14 @@
 <?php
+/**
+ * Config File
+ *
+ * @package nickbreslin/google-spreadsheet-bug-tracker
+ * @author  Nick Breslin (nickbreslin@gmail.com)
+ */
 
-define('SETTINGS_FILE',  ROOT_PATH . 'config/settings.ini');
-
-$iniSettings  = parse_ini_file(SETTINGS_FILE, true);
-
-define('KEY_FILE',  ROOT_PATH . $iniSettings['private_key']);
-
+$iniSettings  = parse_ini_file(ROOT_PATH . 'config/settings.ini', true);
 $client_email = $iniSettings['client_email'];
-$private_key  = file_get_contents(KEY_FILE);
+$private_key  = file_get_contents(ROOT_PATH . $iniSettings['private_key']);
 $scopes       = array("https://spreadsheets.google.com/feeds");
 
 $credentials = new Google_Auth_AssertionCredentials(
