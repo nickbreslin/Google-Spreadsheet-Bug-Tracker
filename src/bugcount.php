@@ -16,7 +16,7 @@
  * 
  * @return array $results associative array
  */
-function doBugCount($worksheetFeed)  
+function doBugCount($worksheetFeed)
 {
 
     $results = [];
