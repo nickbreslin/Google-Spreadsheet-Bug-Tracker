@@ -14,12 +14,12 @@ if ($client->getAuth()->isAccessTokenExpired()) {
 
 
 /**
-    * Returns a list feed of the specified worksheet.
-    * 
-    * @param object $client
-    * 
-    * @return string $accessToken
-*/
+ * Returns a list feed of the specified worksheet.
+ * 
+ * @param object $client GA Client
+ * 
+ * @return string $accessToken Access Token
+ */
 function getAccessToken($client)  
 {
     

@@ -6,6 +6,14 @@
  * @author  "Nick Breslin <nickbreslin@gmail.com>"
  */
 
+/**
+ * Returns a list feed of the specified worksheet.
+ * 
+ * @param object $worksheet Google Auth Access Token
+ * @param string $file  title of spreadsheet
+ * 
+ * @return array $results
+ */
 function insertLine($worksheet, $file) 
 {
 
@@ -16,6 +24,13 @@ function insertLine($worksheet, $file)
     return $results;
 }
 
+/**
+ * Returns a list feed of the specified worksheet.
+ * 
+ * @param string $file  title of spreadsheet
+ * 
+ * @return array $trimmed
+ */
 function readFromFile($file) 
 {
     // Using the optional flags parameter since PHP 5
