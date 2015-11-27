@@ -10,12 +10,12 @@
 
 
 /**
-    * Returns a list feed of the specified worksheet.
-    * 
-    * @param object $WorksheetFeed Worksheet object
-    * 
-    * @return array $results associative array
-*/
+ * Returns a list feed of the specified worksheet.
+ * 
+ * @param object $WorksheetFeed Worksheet object
+ * 
+ * @return array $results associative array
+ */
 function doBugCount($worksheetFeed)  
 {
 
